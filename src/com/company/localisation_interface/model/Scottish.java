@@ -1,16 +1,19 @@
 package com.company.localisation_interface.model;
 
-import com.company.localisation_interface.ui.Localized;
+import com.company.localisation_interface.ui.Localization;
 
-public class Scottish extends English implements Localized {
+public class Scottish extends English implements Localization {
 
-    public int locality (String name){
-        if (SEX.define(TIME.data()) == true) {
-            System.out.println("Hello scotish Sir " + name + " " + TIME.data());
-        }
-        else {
-            System.out.println("Hello scotish Miss " + name + " " + TIME.data());
-        }
-        return 0;
+
+    @Override
+    public String getMale() {
+        return super.sc_male;
     }
+
+    @Override
+    public String getFemale() {
+        return super.sc_female;
+    }
+
+
 }

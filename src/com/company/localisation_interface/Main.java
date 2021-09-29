@@ -1,11 +1,12 @@
 package com.company.localisation_interface;
 
-import com.company.localisation_interface.model.Language;
-import com.company.localisation_interface.ui.Determinative;
+
+import com.company.localisation_interface.model.AbstractWriter;
+import com.company.localisation_interface.ui.Written;
 
 public class Main {
     public static void main(String[] args) {
-        Determinative determine = new Language();
-        determine.determine();
+        Written written = new AbstractWriter();
+        System.out.println(written.write());
     }
 }
