@@ -3,14 +3,16 @@ package com.company.localisation_interface.model;
 import com.company.localisation_interface.ui.Localization;
 
 public class Ukrainian implements Localization {
-    String male = "Привіт пане ";
-    String female = "Привіт пані ";
+    String hi = "Привіт ";
+    String male = "пане ";
+    String female = "пані ";
 
-    public String getMale (){
-        return male;
+    @Override
+    public String getMale(){
+        return hi + male;
     }
-
-    public String getFemale (){
-        return female;
+    @Override
+    public String getFemale() {
+        return hi + female;
     }
 }

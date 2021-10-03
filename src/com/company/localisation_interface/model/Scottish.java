@@ -3,17 +3,15 @@ package com.company.localisation_interface.model;
 import com.company.localisation_interface.ui.Localization;
 
 public class Scottish extends English implements Localization {
-
+    private String local = "scottish ";
 
     @Override
     public String getMale() {
-        return super.sc_male;
+        return super.hi + local + super.male;
     }
-
     @Override
     public String getFemale() {
-        return super.sc_female;
+        return super.hi + local + super.female;
     }
-
 
 }

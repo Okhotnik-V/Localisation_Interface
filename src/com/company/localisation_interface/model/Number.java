@@ -1,7 +1,6 @@
 package com.company.localisation_interface.model;
 
 import com.company.localisation_interface.ui.Numbered;
-
 import java.util.Scanner;
 
 public class Number implements Numbered {

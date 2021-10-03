@@ -1,21 +1,18 @@
 package com.company.localisation_interface.model;
 
-
 import com.company.localisation_interface.ui.Localization;
 
 public class English implements Localization {
+    public String hi = "Hello ";
+    public String male = "Sir ";
+    public String female = "Miss ";
 
-    private String male = "Hello Sir ";
-    private String female = "Hello Miss ";
-    public String sc_male = "Hello scotish Sir ";
-    public String sc_female = "Hello scotish Miss ";
-
-    public String getMale (){
-        return male;
+    @Override
+    public String getMale(){
+        return hi + male;
     }
-
-    public String getFemale (){
-        return female;
+    @Override
+    public String getFemale(){
+        return hi + female;
     }
-
 }

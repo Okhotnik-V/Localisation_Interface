@@ -3,10 +3,10 @@ package com.company.localisation_interface.model;
 import com.company.localisation_interface.ui.Dating;
 import com.company.localisation_interface.ui.Sexual;
 
-
 public class Sex  implements Sexual {
 
-    public boolean define () {
+    @Override
+    public boolean define() {
         Dating dating = new Date();
         String data = dating.data();
         data = data.substring(data.length() - 1);
