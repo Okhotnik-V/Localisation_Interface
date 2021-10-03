@@ -8,7 +8,7 @@ public class Ukrainian implements Localization {
     String female = "пані ";
 
     @Override
-    public String getMale(){
+    public String getMale() {
         return hi + male;
     }
     @Override

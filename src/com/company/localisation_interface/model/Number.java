@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class Number implements Numbered {
 
     @Override
-    public int digitize (Scanner scanner) { //Number check
+    public int digitize(Scanner scanner) { //Number check
         int number;
         if (scanner.hasNextInt()) {
             number = scanner.nextInt();
